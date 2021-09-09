@@ -1,0 +1,56 @@
+{% extends 'base.html' %}{% load static %}
+{% block main %}
+<div id="app" class='top-190' id='wrapper'>
+
+  <div class='container'>
+    <div class="text-center">
+      <div class="form-group mb-3">
+        <div class="justify-content-center">
+          <input v-model.number="numbers" placeholder="数字を入力してください" class="form-control shadow-sm" type="number"  null=False ></input>
+        </div>
+      </div>
+      <button v-on:click="calc()" class='btn btn-primary shadow-sm'>変換</button>
+    </div>
+  </div>
+
+  <div class='container mt-5'>
+    <div class="mb-4 row">
+      <label class="col-sm-3 col-form-label text-center">2進数</label>
+      <div class="col-sm-8">
+        <input v-model.number="binary" placeholder="2進数が表示されます" class="form-control shadow-sm"  readonly="readonly"></input>
+      </div>
+    </div>
+    <div class="mb-4 row">
+      <label class="col-sm-3 col-form-label text-center">3進数</label>
+      <div class="col-sm-8">
+        <input v-model.number="base" placeholder="3進数が表示されます" class="form-control shadow-sm"  readonly="readonly"></input>
+      </div>
+    </div>
+    <div class="mb-4 row">
+      <label class="col-sm-3 col-form-label text-center">8進数</label>
+      <div class="col-sm-8">
+        <input v-model.number="octal" placeholder="8進数が表示されます" class="form-control shadow-sm" readonly="readonly"></input>
+      </div>
+    </div>
+    <div class="mb-4 row">
+      <label class="col-sm-3 col-form-label text-center">12進数</label>
+      <div class="col-sm-8">
+        <input v-model.number="duodenary" placeholder="12進数が表示されます" class="form-control shadow-sm"  readonly="readonly"></input>
+      </div>
+    </div>
+    <div class="mb-4 row">
+      <label class="col-sm-3 col-form-label text-center">16進数</label>
+      <div class="col-sm-8">
+        <input v-model.number="hexadecimal" placeholder="16進数が表示されます" class="form-control shadow-sm" readonly="readonly"></input>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% comment %} 本番バージョン {% endcomment %}
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+{% comment %} 開発バージョン {% endcomment %}
+{% comment %} <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> {% endcomment %}
+<script src="{% static 'assets/js/main.js' %}" defer></script>
+{% endblock %}

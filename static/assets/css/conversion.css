@@ -1,0 +1,215 @@
+.font-12 {
+  font-size: 12px;
+}
+.font-13 {
+  font-size: 13px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-15 {
+  font-size: 15px;
+}
+.font-16 {
+  font-size: 16px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.bottom-fixed {
+  position: fixed;
+  bottom: 32px;
+}
+
+.logo-font {
+  font-family: "Redressed", cursive;
+}
+
+.logo-text {
+  font-size: 28px;
+}
+.nav-text {
+  color: white;
+}
+
+.nav-absolute {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 100%;
+}
+
+.bg-center-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.img-center-cover {
+  object-fit: cover;
+  object-position: center;
+}
+
+.dark-filter {
+  background-color: rgba(49, 49, 49, 0.6);
+}
+
+.header {
+  padding: 100px 0;
+}
+
+.header-title {
+  font-size: 54px;
+  letter-spacing: 1.5px;
+  color: #e7f3fd;
+}
+
+.max-w-100 {
+  max-width: 100%;
+}
+
+.h-200 {
+  height: 200px;
+}
+
+.lead {
+  font-weight: 500;
+}
+
+.flex-main {
+  flex: 1;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.sns-icon {
+  font-size: 24px;
+  padding: 0 8px;
+}
+
+.sns-icon-xl {
+  font-size: 24px;
+  padding: 0 8px;
+}
+
+.text-twitter {
+  color: #55acee;
+}
+
+.text-facebook {
+  color: #315096;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .article-img {
+    width: 160px;
+    height: 100px;
+  }
+  .article-text {
+    display: none;
+  }
+}
+
+.top-190 {
+    margin-top: 110px;
+}
+
+
+.mt-6 {
+    margin-top: 6rem !important;
+}
+
+h4 {
+    font-size: 1.3rem ;
+}
+
+
+textarea {
+  height: 80px;
+  width: 450px;
+  resize: none !important;
+  position: relative;
+}
+
+.conversion-after {
+  height:27px;
+  width: 500px;
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+  resize: none !important;
+  position: relative;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width:730px){
+  textarea {
+      width: 30rem;
+  }
+}
+
+.mb-10 {
+    margin-bottom: 1000px;
+}
+
+@media screen and (min-width:575px){
+    .pt-10 {
+        padding-top: 7.2rem;
+    }
+}
+
+
+
+@media (max-width: 575px) {
+    .footer575{
+        padding-top: 1rem;
+        bottom: 0;
+    }
+}
+
+
+h1 {
+  font-size: 18px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.navbar-color {
+  background-color: rgba(131, 204, 210, 0.9) !important;
+}
+
+.footer575 {
+  padding-top: 60px;
+}
+
+body,
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
