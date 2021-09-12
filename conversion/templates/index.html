@@ -1,6 +1,6 @@
 {% extends 'base.html' %}{% load static %}
 {% block main %}
-<div id="app" class='top-190' id='wrapper'>
+<div id="app" class='top-110' id='wrapper'>
 
   <div class='container'>
     <div class="text-center">
@@ -14,43 +14,53 @@
   </div>
 
   <div class='container mt-5'>
+  {% comment %} binary {% endcomment %}
     <div class="mb-4 row">
       <label class="col-sm-3 col-form-label text-center">2進数</label>
       <div class="col-sm-8">
         <input v-model.number="binary" placeholder="2進数が表示されます" class="form-control shadow-sm"  readonly="readonly"></input>
       </div>
     </div>
+    {% comment %} end binary {% endcomment %}
+    {% comment %} base {% endcomment %}
     <div class="mb-4 row">
       <label class="col-sm-3 col-form-label text-center">3進数</label>
       <div class="col-sm-8">
         <input v-model.number="base" placeholder="3進数が表示されます" class="form-control shadow-sm"  readonly="readonly"></input>
       </div>
     </div>
+    {% comment %} end base {% endcomment %}
+    {% comment %} octal {% endcomment %}
     <div class="mb-4 row">
       <label class="col-sm-3 col-form-label text-center">8進数</label>
       <div class="col-sm-8">
         <input v-model.number="octal" placeholder="8進数が表示されます" class="form-control shadow-sm" readonly="readonly"></input>
       </div>
     </div>
+    {% comment %} end octal {% endcomment %}
+    {% comment %} duodenary {% endcomment %}
     <div class="mb-4 row">
       <label class="col-sm-3 col-form-label text-center">12進数</label>
       <div class="col-sm-8">
         <input v-model.number="duodenary" placeholder="12進数が表示されます" class="form-control shadow-sm"  readonly="readonly"></input>
       </div>
     </div>
+    {% comment %} end duodenary {% endcomment %}
+    {% comment %} hexadecimal {% endcomment %}
     <div class="mb-4 row">
       <label class="col-sm-3 col-form-label text-center">16進数</label>
       <div class="col-sm-8">
         <input v-model.number="hexadecimal" placeholder="16進数が表示されます" class="form-control shadow-sm" readonly="readonly"></input>
       </div>
     </div>
+    {% comment %} end hexadecimal {% endcomment %}
   </div>
 
 </div>
-{% comment %} 本番バージョン {% endcomment %}
+{% comment %} 本番バージョンのvue {% endcomment %}
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
-{% comment %} 開発バージョン {% endcomment %}
+{% comment %} 開発バージョンのvue {% endcomment %}
 {% comment %} <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> {% endcomment %}
 <script src="{% static 'assets/js/main.js' %}" defer></script>
 {% endblock %}
